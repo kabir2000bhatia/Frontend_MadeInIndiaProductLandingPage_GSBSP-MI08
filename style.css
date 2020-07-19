@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda+One&display=swap');
+
+
+body{
+	font-family: 'Roboto', sans-serif!important;
+}
+
+
+/*******NAV-BAR********/
+
+.fa.fa-apple.apple-logo {
+    font-size: 32px;
+    line-height: 0.8
+}
+
+li a{
+	color: #fff!important;
+}
+
+.fas.fa-industry{
+	color: #ffffff;
+	font-size: 20px;
+}
+
+span.main-title{
+
+}
+
+.navbar{
+	background-color: #FF4040;
+}
+li .nav-link:hover{
+	text-decoration: underline;
+}
+
+span.badge{
+	transform: translate(5px,-10px);
+}
+
+
+
+/***********Home********/
+
+.row{
+	margin: 40px 0 40px;
+}
+
+.card{
+	width: 300px!important;
+	border: none!important;
+	border-radius: 0!important;
+}
+
+.card-text{
+	font-size: 12px;
+}
+
+.fa-star{
+	color: #FBC02D;
+	font-size: 12px;
+	margin-right: 5px;
+}
+
+.same{
+	cursor: pointer;
+}
+
+div.same:hover{
+	background: red!important;
+}
+
+
+
+/******for sticky navbar******/
+
+#navbar{
+	top: 0;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+	z-index: 100;
+	position: fixed;
+	transition: 1.5s ease-out;
+}
+
+span.main-title {
+	font-weight: bold;
+	letter-spacing: -2px;
+	font-family: 'Merienda One', cursive;
+}
+
+span.first{
+	color: #fff;
+}
+
+span.last{
+	color:#000;
+}
+
+.container-fluid{
+	padding-top: 100px;
+	margin-bottom: 0;
+	padding-bottom: 0;
+	background-color: #2196f354;
+}
+
+
+
+/***********About us*************/
+
+.about-us{
+	background-color: #b0ffb3;
+}
+
+h1.about-heading{
+	letter-spacing: 3px;
+}
+
+.about-heading::after{
+	content: ".";
+	width: 100px;
+	height: 3px;
+	border-radius: 15px;
+	background: #FF4040;
+	display: block;
+	font-size: 0;
+	margin: 5px 110px;
+}
+
+.about-us-content{
+	font-size: 18px;
+	letter-spacing: 1.5px;
+}
+
+.about-us-content h4{
+	font-family: 'Merienda One', cursive;
+	color: #FF5722;
+	letter-spacing: 3px;
+	margin-bottom: 20px;
+}
+
+
+
+/***********reviews**********/
+
+h1{
+	letter-spacing: 3px;
+	text-transform: uppercase;
+}
+
+.reviews{
+	background: #f5ea8a;
+}
+
+.card-review{
+	width: 400px;
+	border: none;
+	border-radius: 10px;
+	background: #ffffff;
+	border: none;
+}
+
+.customer-reviews::after{
+	content: ".";
+	width: 70px;
+	height: 3px;
+	border-radius: 15px;
+	background: #FF4040;
+	display: block;
+	font-size: 0;
+	margin: 5px 50px;
+}
+
+button{
+	border: none;
+	background: none;
+}
+
+.fas{
+	color: #FF4040;
+}
+
+#author{
+	letter-spacing: 3px;
+}
+
+#date{
+	color: #FF4040;
+}
+
+#info{
+	font-size: 13px;
+	font-family: 'Merienda One', cursive;
+	font-style: italic;
+}
+
+.quote{
+	transform: translate(-155px, 7px);
+	font-size: 30px;
+}
+.fa-quote-left{
+	color: #ffdfdf;
+}
+
+.random-btn{
+	border: 1px solid #FF4040;
+	margin: 5px 100px 5px;
+	border-radius: 15px;
+}
+
+.random-btn:hover{
+	background: #FF4040;
+	color: #fff;
+	cursor: pointer;
+}
+
+
+
+/***********footer************/
+
+.page-footer{
+	background: #E62020;
+	padding-top: 25px;
+	height: 200px;
+}
+
+.footer-col{
+	width: 25%;
+	float: left;
+}
+
+.page-footer h3{
+	font-size: 13px;
+	color: #e7e7e7;
+}
+
+.page-footer h3::after{
+	content: ".";
+	width: 90%;
+	height: 0.5px;
+	font-size: 0;
+	background: #e7e7e7;
+	display: block;
+	margin: 15px 0;
+}
+.page-footer ul{
+	list-style: none;
+	padding-left: 0;
+}
+
+.page-footer li{
+	font-size: 13px;
+	color: #fff;
+	line-height: 1.6;
+}
+
+.page-footer li:hover{
+	color: #fff;
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.copy{
+	color: #e7e7e7;
+	margin-top: 32px;
+}
+
+.social li{
+	display: inline-block;
+}
+
+.social li a {
+	text-align: center;
+	line-height: 45px;
+	margin-left: 10px;
+}
+.social a img{
+	width: 25px;
+	height: 25px;
+}
+
+
+
+/****responsive-settings****/
+
+@media screen and (max-width: 768px) {
+	.col-md-4{
+		margin-bottom: 20px;
+	}
+	.about-us-content{
+		text-align: center;
+	}
+	.random-btn{
+		margin: 5px 90px 5px;
+	}
+
+}
+
+@media screen and (max-width: 420px) {
+    .page-footer{
+	    height: 350px;
+}
+	.random-btn{
+		border: 1px solid #FF4040;
+		margin: 5px 50px 5px;
+		border-radius: 15px;
+}
+	.customer-reviews::after{
+		margin: 5px 30px;
+}
+}
+
+
+/********END*******/
